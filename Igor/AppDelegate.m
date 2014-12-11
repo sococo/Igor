@@ -7,20 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "SCOfficeAssistant.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+@property (strong) SCOfficeAssistant *igor;
 @end
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    self.igor = [[SCOfficeAssistant alloc] init];
+    [self.igor hello];
 }
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+- (void)applicationWillTerminate:(NSNotification *)aNotification
+{
+    [self.igor goodbye];
+    self.igor = nil;
 }
 
 @end
