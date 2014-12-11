@@ -15,6 +15,7 @@
 @property (strong) SococoApplication *sococoApp;
 
 @property (strong) NSString *currentRoomName;
+@property (assign) NSUInteger roomMemberCount;
 @end
 
 @implementation SCOfficeConnection
@@ -52,7 +53,12 @@
 {
     __unused NSArray *members = [notification.userInfo valueForKey:@"members"];
 
-    self.currentRoomName = notification.userInfo[@"name"];
+    NSString *roomName = notification.userInfo[@"name"];
+    if(![self.currentRoomName isEqualToString:roomName])
+        self.currentRoomName = roomName;
+    
+    if(self.roomMemberCount != members.count)
+        self.roomMemberCount = members.count;
 }
 
 @end

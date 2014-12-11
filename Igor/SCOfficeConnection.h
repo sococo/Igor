@@ -14,5 +14,6 @@
 @interface SCOfficeConnection : NSObject
 
 @property (strong, readonly) NSString *currentRoomName;
+@property (assign, readonly) NSUInteger roomMemberCount;
 
 @end

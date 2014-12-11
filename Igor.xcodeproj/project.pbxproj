@@ -16,6 +16,7 @@
 		DFB321DD1A3A3A6900C44696 /* SCOfficeConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321DC1A3A3A6900C44696 /* SCOfficeConnection.m */; };
 		DFB321E01A3A3CA100C44696 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB321DF1A3A3CA100C44696 /* ScriptingBridge.framework */; };
 		DFB321E51A3A40A200C44696 /* SCMusicPlayerCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321E41A3A40A200C44696 /* SCMusicPlayerCommon.m */; };
+		DFB321EA1A3A416A00C44696 /* SCiTunesMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321E91A3A416A00C44696 /* SCiTunesMusicPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,9 @@
 		DFB321E11A3A3F0F00C44696 /* SCMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMusicPlayer.h; sourceTree = "<group>"; };
 		DFB321E31A3A40A200C44696 /* SCMusicPlayerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMusicPlayerCommon.h; sourceTree = "<group>"; };
 		DFB321E41A3A40A200C44696 /* SCMusicPlayerCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMusicPlayerCommon.m; sourceTree = "<group>"; };
+		DFB321E61A3A414D00C44696 /* SCiTunesScriptInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCiTunesScriptInterface.h; sourceTree = "<group>"; };
+		DFB321E81A3A416A00C44696 /* SCiTunesMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCiTunesMusicPlayer.h; sourceTree = "<group>"; };
+		DFB321E91A3A416A00C44696 /* SCiTunesMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCiTunesMusicPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +156,22 @@
 		DFB321E21A3A3FC100C44696 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				DFB321E71A3A415200C44696 /* iTunes */,
 				DFB321E11A3A3F0F00C44696 /* SCMusicPlayer.h */,
 				DFB321E31A3A40A200C44696 /* SCMusicPlayerCommon.h */,
 				DFB321E41A3A40A200C44696 /* SCMusicPlayerCommon.m */,
 			);
 			name = Music;
+			sourceTree = "<group>";
+		};
+		DFB321E71A3A415200C44696 /* iTunes */ = {
+			isa = PBXGroup;
+			children = (
+				DFB321E61A3A414D00C44696 /* SCiTunesScriptInterface.h */,
+				DFB321E81A3A416A00C44696 /* SCiTunesMusicPlayer.h */,
+				DFB321E91A3A416A00C44696 /* SCiTunesMusicPlayer.m */,
+			);
+			name = iTunes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB321EA1A3A416A00C44696 /* SCiTunesMusicPlayer.m in Sources */,
 				DFB321B91A3A2BE800C44696 /* main.m in Sources */,
 				DFB321DD1A3A3A6900C44696 /* SCOfficeConnection.m in Sources */,
 				DFB321E51A3A40A200C44696 /* SCMusicPlayerCommon.m in Sources */,
