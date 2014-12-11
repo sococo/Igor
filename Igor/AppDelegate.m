@@ -11,7 +11,6 @@
 
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
 @property (strong) SCOfficeAssistant *igor;
 @end
 
