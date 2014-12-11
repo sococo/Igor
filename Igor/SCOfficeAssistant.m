@@ -10,6 +10,7 @@
 #import "SCOfficeConnection.h"
 
 #import "SCiTunesMusicPlayer.h"
+#import "SCSpotifyMusicPlayer.h"
 
 static void *CONTEXT_OFFICE_ROOM_NAME=&CONTEXT_OFFICE_ROOM_NAME;
 static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
@@ -26,7 +27,10 @@ static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
     // begin handling events
     self.office = [[SCOfficeConnection alloc] init];
     
-    self.musicPlayers = @{ @"iTunes" : [[SCiTunesMusicPlayer alloc] init] };
+    self.musicPlayers = @{
+        @"iTunes" : [[SCiTunesMusicPlayer alloc] init],
+        @"Spotify" : [[SCSpotifyMusicPlayer alloc] init]
+    };
     
     [self.office addObserver:self forKeyPath:@"currentRoomName" options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:CONTEXT_OFFICE_ROOM_NAME];
     [self.office addObserver:self forKeyPath:@"roomMemberCount" options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:CONTEXT_OFFICE_MEMBER_COUNT];
@@ -37,6 +41,9 @@ static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
     // finish handling events
     [self.office removeObserver:self forKeyPath:@"roomMemberCount" context:CONTEXT_OFFICE_MEMBER_COUNT];
     [self.office removeObserver:self forKeyPath:@"currentRoomName" context:CONTEXT_OFFICE_ROOM_NAME];
+    
+    self.musicPlayers = nil;
+    
     self.office = nil;
 }
 
@@ -65,8 +72,10 @@ static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
         {
             for(id<SCMusicPlayer> player in self.musicPlayers.allValues)
             {
+                // play the music
                 [player play];
                 
+                // at a comfortable level
                 [player setVolume:0.8];
             }
         }

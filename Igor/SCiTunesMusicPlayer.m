@@ -31,6 +31,8 @@
     self.itunes = nil;
 }
 
+#pragma mark - SCMusicPlayer
+
 - (void)play
 {
     if([self.itunes isRunning])
