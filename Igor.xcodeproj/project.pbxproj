@@ -15,6 +15,7 @@
 		DFB321D61A3A30C500C44696 /* SCOfficeAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321D51A3A30C500C44696 /* SCOfficeAssistant.m */; };
 		DFB321DD1A3A3A6900C44696 /* SCOfficeConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321DC1A3A3A6900C44696 /* SCOfficeConnection.m */; };
 		DFB321E01A3A3CA100C44696 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB321DF1A3A3CA100C44696 /* ScriptingBridge.framework */; };
+		DFB321E51A3A40A200C44696 /* SCMusicPlayerCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321E41A3A40A200C44696 /* SCMusicPlayerCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		DFB321DC1A3A3A6900C44696 /* SCOfficeConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCOfficeConnection.m; sourceTree = "<group>"; };
 		DFB321DE1A3A3BE200C44696 /* SCVirtualOfficeScriptInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCVirtualOfficeScriptInterface.h; sourceTree = "<group>"; };
 		DFB321DF1A3A3CA100C44696 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		DFB321E11A3A3F0F00C44696 /* SCMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMusicPlayer.h; sourceTree = "<group>"; };
+		DFB321E31A3A40A200C44696 /* SCMusicPlayerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMusicPlayerCommon.h; sourceTree = "<group>"; };
+		DFB321E41A3A40A200C44696 /* SCMusicPlayerCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMusicPlayerCommon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		DFB321D31A3A2C3900C44696 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DFB321E21A3A3FC100C44696 /* Music */,
 				DFB321DA1A3A3A3C00C44696 /* Office */,
 				DFB321D41A3A30C500C44696 /* SCOfficeAssistant.h */,
 				DFB321D51A3A30C500C44696 /* SCOfficeAssistant.m */,
@@ -142,6 +147,16 @@
 				DFB321DC1A3A3A6900C44696 /* SCOfficeConnection.m */,
 			);
 			name = Office;
+			sourceTree = "<group>";
+		};
+		DFB321E21A3A3FC100C44696 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				DFB321E11A3A3F0F00C44696 /* SCMusicPlayer.h */,
+				DFB321E31A3A40A200C44696 /* SCMusicPlayerCommon.h */,
+				DFB321E41A3A40A200C44696 /* SCMusicPlayerCommon.m */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +260,7 @@
 			files = (
 				DFB321B91A3A2BE800C44696 /* main.m in Sources */,
 				DFB321DD1A3A3A6900C44696 /* SCOfficeConnection.m in Sources */,
+				DFB321E51A3A40A200C44696 /* SCMusicPlayerCommon.m in Sources */,
 				DFB321B71A3A2BE800C44696 /* AppDelegate.m in Sources */,
 				DFB321D61A3A30C500C44696 /* SCOfficeAssistant.m in Sources */,
 			);
