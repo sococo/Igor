@@ -18,6 +18,7 @@
 		DFB321E51A3A40A200C44696 /* SCMusicPlayerCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321E41A3A40A200C44696 /* SCMusicPlayerCommon.m */; };
 		DFB321EA1A3A416A00C44696 /* SCiTunesMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321E91A3A416A00C44696 /* SCiTunesMusicPlayer.m */; };
 		DFB321EF1A3A565E00C44696 /* SCSpotifyMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321EE1A3A565E00C44696 /* SCSpotifyMusicPlayer.m */; };
+		DFB321F41A3A5DDD00C44696 /* SCRdioMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321F31A3A5DDD00C44696 /* SCRdioMusicPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,9 @@
 		DFB321EC1A3A564300C44696 /* SCSpotifyScriptInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSpotifyScriptInterface.h; sourceTree = "<group>"; };
 		DFB321ED1A3A565E00C44696 /* SCSpotifyMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSpotifyMusicPlayer.h; sourceTree = "<group>"; };
 		DFB321EE1A3A565E00C44696 /* SCSpotifyMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSpotifyMusicPlayer.m; sourceTree = "<group>"; };
+		DFB321F11A3A5DC700C44696 /* SCRdioScriptInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRdioScriptInterface.h; sourceTree = "<group>"; };
+		DFB321F21A3A5DDD00C44696 /* SCRdioMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRdioMusicPlayer.h; sourceTree = "<group>"; };
+		DFB321F31A3A5DDD00C44696 /* SCRdioMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRdioMusicPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 		DFB321E21A3A3FC100C44696 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				DFB321F01A3A5DB500C44696 /* Rdio */,
 				DFB321EB1A3A563800C44696 /* Spotify */,
 				DFB321E71A3A415200C44696 /* iTunes */,
 				DFB321E11A3A3F0F00C44696 /* SCMusicPlayer.h */,
@@ -187,6 +192,16 @@
 				DFB321EE1A3A565E00C44696 /* SCSpotifyMusicPlayer.m */,
 			);
 			name = Spotify;
+			sourceTree = "<group>";
+		};
+		DFB321F01A3A5DB500C44696 /* Rdio */ = {
+			isa = PBXGroup;
+			children = (
+				DFB321F11A3A5DC700C44696 /* SCRdioScriptInterface.h */,
+				DFB321F21A3A5DDD00C44696 /* SCRdioMusicPlayer.h */,
+				DFB321F31A3A5DDD00C44696 /* SCRdioMusicPlayer.m */,
+			);
+			name = Rdio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB321F41A3A5DDD00C44696 /* SCRdioMusicPlayer.m in Sources */,
 				DFB321EA1A3A416A00C44696 /* SCiTunesMusicPlayer.m in Sources */,
 				DFB321B91A3A2BE800C44696 /* main.m in Sources */,
 				DFB321EF1A3A565E00C44696 /* SCSpotifyMusicPlayer.m in Sources */,

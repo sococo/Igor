@@ -11,6 +11,7 @@
 
 #import "SCiTunesMusicPlayer.h"
 #import "SCSpotifyMusicPlayer.h"
+#import "SCRdioMusicPlayer.h"
 
 static void *CONTEXT_OFFICE_ROOM_NAME=&CONTEXT_OFFICE_ROOM_NAME;
 static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
@@ -29,7 +30,8 @@ static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
     
     self.musicPlayers = @{
         @"iTunes" : [[SCiTunesMusicPlayer alloc] init],
-        @"Spotify" : [[SCSpotifyMusicPlayer alloc] init]
+        @"Spotify" : [[SCSpotifyMusicPlayer alloc] init],
+        @"Rdio" : [[SCRdioMusicPlayer alloc] init]
     };
     
     [self.office addObserver:self forKeyPath:@"currentRoomName" options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:CONTEXT_OFFICE_ROOM_NAME];
@@ -65,7 +67,7 @@ static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
                 [player setVolume:0.3];
                 
                 // or just pause altogether
-                [player pause];
+                // [player pause];
             }
         }
         else
