@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFB321B71A3A2BE800C44696 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321B61A3A2BE800C44696 /* AppDelegate.m */; };
+		DFB321B91A3A2BE800C44696 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321B81A3A2BE800C44696 /* main.m */; };
+		DFB321BB1A3A2BE800C44696 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB321BA1A3A2BE800C44696 /* Images.xcassets */; };
+		DFB321BE1A3A2BE800C44696 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB321BC1A3A2BE800C44696 /* MainMenu.xib */; };
+		DFB321CA1A3A2BE800C44696 /* IgorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB321C91A3A2BE800C44696 /* IgorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFB321C41A3A2BE800C44696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFB321A81A3A2BE800C44696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFB321AF1A3A2BE800C44696;
+			remoteInfo = Igor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFB321B01A3A2BE800C44696 /* Igor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Igor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB321B41A3A2BE800C44696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB321B51A3A2BE800C44696 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DFB321B61A3A2BE800C44696 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFB321B81A3A2BE800C44696 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFB321BA1A3A2BE800C44696 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DFB321BD1A3A2BE800C44696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DFB321C31A3A2BE800C44696 /* IgorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IgorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB321C81A3A2BE800C44696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB321C91A3A2BE800C44696 /* IgorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IgorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFB321AD1A3A2BE800C44696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB321C01A3A2BE800C44696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFB321A71A3A2BE800C44696 = {
+			isa = PBXGroup;
+			children = (
+				DFB321B21A3A2BE800C44696 /* Igor */,
+				DFB321C61A3A2BE800C44696 /* IgorTests */,
+				DFB321B11A3A2BE800C44696 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFB321B11A3A2BE800C44696 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFB321B01A3A2BE800C44696 /* Igor.app */,
+				DFB321C31A3A2BE800C44696 /* IgorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFB321B21A3A2BE800C44696 /* Igor */ = {
+			isa = PBXGroup;
+			children = (
+				DFB321B51A3A2BE800C44696 /* AppDelegate.h */,
+				DFB321B61A3A2BE800C44696 /* AppDelegate.m */,
+				DFB321BA1A3A2BE800C44696 /* Images.xcassets */,
+				DFB321BC1A3A2BE800C44696 /* MainMenu.xib */,
+				DFB321B31A3A2BE800C44696 /* Supporting Files */,
+			);
+			path = Igor;
+			sourceTree = "<group>";
+		};
+		DFB321B31A3A2BE800C44696 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFB321B41A3A2BE800C44696 /* Info.plist */,
+				DFB321B81A3A2BE800C44696 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFB321C61A3A2BE800C44696 /* IgorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFB321C91A3A2BE800C44696 /* IgorTests.m */,
+				DFB321C71A3A2BE800C44696 /* Supporting Files */,
+			);
+			path = IgorTests;
+			sourceTree = "<group>";
+		};
+		DFB321C71A3A2BE800C44696 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFB321C81A3A2BE800C44696 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFB321AF1A3A2BE800C44696 /* Igor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB321CD1A3A2BE800C44696 /* Build configuration list for PBXNativeTarget "Igor" */;
+			buildPhases = (
+				DFB321AC1A3A2BE800C44696 /* Sources */,
+				DFB321AD1A3A2BE800C44696 /* Frameworks */,
+				DFB321AE1A3A2BE800C44696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Igor;
+			productName = Igor;
+			productReference = DFB321B01A3A2BE800C44696 /* Igor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFB321C21A3A2BE800C44696 /* IgorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB321D01A3A2BE800C44696 /* Build configuration list for PBXNativeTarget "IgorTests" */;
+			buildPhases = (
+				DFB321BF1A3A2BE800C44696 /* Sources */,
+				DFB321C01A3A2BE800C44696 /* Frameworks */,
+				DFB321C11A3A2BE800C44696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFB321C51A3A2BE800C44696 /* PBXTargetDependency */,
+			);
+			name = IgorTests;
+			productName = IgorTests;
+			productReference = DFB321C31A3A2BE800C44696 /* IgorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFB321A81A3A2BE800C44696 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Sococo;
+				TargetAttributes = {
+					DFB321AF1A3A2BE800C44696 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DFB321C21A3A2BE800C44696 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DFB321AF1A3A2BE800C44696;
+					};
+				};
+			};
+			buildConfigurationList = DFB321AB1A3A2BE800C44696 /* Build configuration list for PBXProject "Igor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFB321A71A3A2BE800C44696;
+			productRefGroup = DFB321B11A3A2BE800C44696 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFB321AF1A3A2BE800C44696 /* Igor */,
+				DFB321C21A3A2BE800C44696 /* IgorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFB321AE1A3A2BE800C44696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB321BB1A3A2BE800C44696 /* Images.xcassets in Resources */,
+				DFB321BE1A3A2BE800C44696 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB321C11A3A2BE800C44696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFB321AC1A3A2BE800C44696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB321B91A3A2BE800C44696 /* main.m in Sources */,
+				DFB321B71A3A2BE800C44696 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB321BF1A3A2BE800C44696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB321CA1A3A2BE800C44696 /* IgorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFB321C51A3A2BE800C44696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFB321AF1A3A2BE800C44696 /* Igor */;
+			targetProxy = DFB321C41A3A2BE800C44696 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFB321BC1A3A2BE800C44696 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB321BD1A3A2BE800C44696 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFB321CB1A3A2BE800C44696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DFB321CC1A3A2BE800C44696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DFB321CE1A3A2BE800C44696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Igor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DFB321CF1A3A2BE800C44696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Igor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DFB321D11A3A2BE800C44696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IgorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Igor.app/Contents/MacOS/Igor";
+			};
+			name = Debug;
+		};
+		DFB321D21A3A2BE800C44696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IgorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Igor.app/Contents/MacOS/Igor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFB321AB1A3A2BE800C44696 /* Build configuration list for PBXProject "Igor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB321CB1A3A2BE800C44696 /* Debug */,
+				DFB321CC1A3A2BE800C44696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB321CD1A3A2BE800C44696 /* Build configuration list for PBXNativeTarget "Igor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB321CE1A3A2BE800C44696 /* Debug */,
+				DFB321CF1A3A2BE800C44696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DFB321D01A3A2BE800C44696 /* Build configuration list for PBXNativeTarget "IgorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB321D11A3A2BE800C44696 /* Debug */,
+				DFB321D21A3A2BE800C44696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFB321A81A3A2BE800C44696 /* Project object */;
+}
