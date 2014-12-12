@@ -13,9 +13,18 @@ The Igor source is provided as a starting point for implementing other great fea
 
 ## Co-Presence
 
+<p align="center">
+<img src="Assets/igor_rickroll.gif" width="357" height="174">
+</p>
+
+
 When you move to a room with other people, Igor kindly turns the music down on your local computer. This makes it easier to jump in to conversations without having to fumble for the volume controls on your music app. When you're by yourself in a room, Igor will turn your music back up to a comfortable level.
 
 ## Status Updates
+
+<p align="center">
+<img src="Assets/igor_music_status.png" width="250" height="192">
+</p>
 
 Igor thinks the music you listen to is pretty cool, and wants to share your current jams with the folks in your office space. As the current track changes in your music player, Igor shares the track title and artist in your status message.
 
