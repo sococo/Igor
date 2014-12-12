@@ -31,6 +31,41 @@
     self.spotify = nil;
 }
 
+- (NSString *)playerStateNotificationName
+{
+    return @"com.spotify.client.PlaybackStateChanged";
+}
+
+- (void)playerStateChangedNotification:(NSNotification *)notification
+{
+    // Spotify user info:
+    //    {
+    //        Album = "No Funny Hats";
+    //        "Album Artist" = "Buddy Rich";
+    //        Artist = "Buddy Rich";
+    //        "Disc Number" = 1;
+    //        Duration = 241;
+    //        "Has Artwork" = 1;
+    //        Name = "Bugle Call Rag";
+    //        "Play Count" = 4;
+    //        "Playback Position" = 0;
+    //        "Player State" = Playing;
+    //        Popularity = 13;
+    //        Starred = 0;
+    //        "Track ID" = "spotify:track:6nt9JIYmlJkkiFLAVIGlxe";
+    //        "Track Number" = 3;
+    //    }
+    
+    // Spotify event includes details; we'll ask the script interface to avoid magic string here
+    NSString *artist = [[self.spotify currentTrack] artist];
+    NSString *track = [[self.spotify currentTrack] name];
+    
+    if([self.spotify playerState] == SpotifyEPlSPlaying)
+    {
+        [self.delegate musicPlayer:self startTrack:track byArtist:artist withInfo:notification.userInfo];
+    }
+}
+
 #pragma mark - SCMusicPlayer
 
 - (void)play
