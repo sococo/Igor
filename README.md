@@ -1,7 +1,5 @@
 ![Igor](Assets/igor_header.png)
 
-# Igor
-
 	Note: Igor requires features from the Sococo application that are not yet released.
 
 Igor is a personal assistant for [Sococo](https://www.sococo.com) virtual offices, offering a handful of favors to make the virtual office experience even better. Igor is a standalone Mac OS X app. It implements behaviors through a combination of ScriptingBridge application control and event observation with `NSDistributedNotificationCenter`.
