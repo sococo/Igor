@@ -58,6 +58,7 @@ static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
 - (void)musicPlayer:(id)player startTrack:(NSString *)trackName byArtist:(NSString *)artistName withInfo:(id)info
 {
     NSLog(@"%@ started playing %@ - %@", player, artistName, trackName);
+    [self.office setStatusMessage:[NSString stringWithFormat:@"♫ %@ - %@", artistName, trackName]];
 }
 
 #pragma mark - Notifications

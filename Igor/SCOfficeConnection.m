@@ -46,6 +46,13 @@
     [[NSDistributedNotificationCenter defaultCenter] removeObserver:self name:kEnteredRoomEvent object:nil];
 }
 
+- (void)setStatusMessage:(NSString *)statusMessage
+{
+    if([self.sococoApp isRunning])
+    {
+        [self.sococoApp setStatusMessage:statusMessage];
+    }
+}
 
 #pragma mark - Events
 

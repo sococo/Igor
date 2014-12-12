@@ -16,4 +16,6 @@
 @property (strong, readonly) NSString *currentRoomName;
 @property (assign, readonly) NSUInteger roomMemberCount;
 
+- (void)setStatusMessage:(NSString *)statusMessage;
+
 @end
