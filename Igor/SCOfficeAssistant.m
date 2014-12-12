@@ -16,7 +16,7 @@
 static void *CONTEXT_OFFICE_ROOM_NAME=&CONTEXT_OFFICE_ROOM_NAME;
 static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
 
-@interface SCOfficeAssistant ()
+@interface SCOfficeAssistant () <SCMusicPlayerDelegate>
 @property (strong) SCOfficeConnection *office;
 @property (strong) NSDictionary *musicPlayers;
 @end
@@ -33,6 +33,10 @@ static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
         @"Spotify" : [[SCSpotifyMusicPlayer alloc] init],
         @"Rdio" : [[SCRdioMusicPlayer alloc] init]
     };
+
+    for(SCMusicPlayerCommon *player in self.musicPlayers.allValues)
+        player.delegate = self;
+        
     
     [self.office addObserver:self forKeyPath:@"currentRoomName" options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:CONTEXT_OFFICE_ROOM_NAME];
     [self.office addObserver:self forKeyPath:@"roomMemberCount" options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:CONTEXT_OFFICE_MEMBER_COUNT];
@@ -48,6 +52,15 @@ static void *CONTEXT_OFFICE_MEMBER_COUNT=&CONTEXT_OFFICE_MEMBER_COUNT;
     
     self.office = nil;
 }
+
+#pragma mark - SCMusicPlayerDelegate
+
+- (void)musicPlayer:(id)player startTrack:(NSString *)trackName byArtist:(NSString *)artistName withInfo:(id)info
+{
+    NSLog(@"%@ started playing %@ - %@", player, artistName, trackName);
+}
+
+#pragma mark - Notifications
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {

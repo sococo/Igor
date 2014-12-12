@@ -31,6 +31,25 @@
     self.rdio = nil;
 }
 
+#pragma mark - Player State Notifications
+
+- (NSString *)playerStateNotificationName
+{
+    return @"com.rdio.desktop.playStateChanged";
+}
+
+- (void)playerStateChangedNotification:(NSNotification *)notification
+{
+    // userInfo is nil for Rdio - ask the scripting bridge for current track details
+    NSString *artist = [[self.rdio currentTrack] artist];
+    NSString *track = [[self.rdio currentTrack] name];
+    
+    if([self.rdio playerState] == RdioEPSSPlaying)
+    {
+        [self.delegate musicPlayer:self startTrack:track byArtist:artist withInfo:nil];
+    }
+}
+
 #pragma mark - SCMusicPlayer
 
 - (void)play

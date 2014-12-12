@@ -10,6 +10,46 @@
 
 @implementation SCMusicPlayerCommon
 
+- (instancetype)init
+{
+    self = [super init];
+    if(self)
+    {
+        NSString *playerStateNotificationName = [self playerStateNotificationName];
+        if(playerStateNotificationName)
+        {
+            [[NSDistributedNotificationCenter defaultCenter] addObserver:self
+                                                                selector:@selector(playerStateChangedNotification:)
+                                                                    name:playerStateNotificationName
+                                                                  object:nil
+                                                      suspensionBehavior:NSNotificationSuspensionBehaviorDeliverImmediately];
+        }
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    if([self playerStateNotificationName])
+    {
+        [[NSDistributedNotificationCenter defaultCenter] removeObserver:self];
+    }
+}
+
+#pragma mark - Play State Notifications
+
+- (NSString *)playerStateNotificationName
+{
+    return nil;
+}
+
+- (void)playerStateChangedNotification:(NSNotification *)notification
+{
+    // implement in subclasses
+}
+
+#pragma mark - SCMusicPlayer
+
 - (void)play
 {
     // implement in subclasses
@@ -24,5 +64,7 @@
 {
     // implement in subclasses
 }
+
+
 
 @end
